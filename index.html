@@ -15,23 +15,49 @@
 
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+      <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Lab<span>5.</span></a>
         </div>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#">About</a>
+            <ul class="dropdown" style="transform: translateX(-16%);">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+            <ul class="dropdown" style="transform: translateX(-10%);">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Web</a>
+            <ul class="dropdown" style="transform: translateX(-20%);">
+              <li><a href="#">Option 1</a></li>
+              <li><a href="#">Option 2</a></li>
+              <li><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
+    </nav>
+      
 
     <!-- home section start -->
     <section class="home" id="home">
