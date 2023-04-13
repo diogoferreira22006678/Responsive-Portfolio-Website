@@ -41,13 +41,6 @@ $(document).ready(function(){
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Student", "Developer", "Gamer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -82,12 +75,26 @@ $(document ).ready(function() {
     });
 });
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+// Get all the dropdown links
+const dropdownLinks = document.querySelectorAll('.menu .dropdown-link');
+
+// Attach click event listener to each dropdown link
+dropdownLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    // Prevent the default link behavior
+    event.preventDefault();
+
+    // Toggle the visibility of the dropdown menu
+    const dropdown = link.nextElementSibling;
+    dropdown.classList.toggle('active');
+  });
+});  
+
+const dropdowns = document.getElementsByClassName('dropdown');
+
+if(window.matchMedia("(max-width: 700px)").matches){
+  // set the translateX of all dropdowns to 0
+  for(let i=0; i<dropdowns.length; i++){
+    dropdowns[i].style.transform = "translateX(0)";
   }
+}
