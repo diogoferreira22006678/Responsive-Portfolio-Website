@@ -35,13 +35,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.about .about-stuff
+{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -237,23 +235,23 @@ section .title::after{
 .home .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+.home .home-stuff .text-presentation{
     font-size: 27px;
 }
-.home .home-content .text-2{
+.home .home-stuff .text-name{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-stuff .text-carrousel{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-stuff .text-carrousel span{
     color: #1463F3;
     font-weight: 500;
 }
-.home .home-content a{
+.home .home-stuff a{
     display: inline-block;
     background: #1463F3;
     color: #fff;
@@ -265,7 +263,7 @@ section .title::after{
     border: 2px solid #1463F3;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home .home-stuff a:hover{
     color: #1463F3;
     background: none;
 }
