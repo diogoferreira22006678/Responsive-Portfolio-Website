@@ -26,27 +26,15 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
-section{
-    padding: 100px 0;
-}
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
     margin: auto;
+    padding: 0 20px;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+
 section .title{
     position: relative;
     text-align: center;
@@ -55,6 +43,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
+    color : #1463F3;
 }
 section .title::before{
     content: "";
@@ -63,7 +52,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #1463F3;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -270,6 +259,104 @@ section .title::after{
     background: none;
 }
 
+/* Border Between Content */
+.border-btw-content {
+  background: url("images/banner.jpg") no-repeat center;
+  background-size: cover;
+  background-color: transparent;
+  background-attachment: fixed;
+  padding: 80px 0;
+
+}
+
+.container{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+/* about section styling */
+.about {
+  background-color: #f3f7fc;
+}
+
+.about .title, .studies .title, .skills .title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #0c193d;
+}
+
+.about-content, .studies-content, .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-content .left-col, .studies-content .left-col, .skills-content .left-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content .left-col img, .studies-content .right-col img {
+  transform: scaleX(-1);
+}
+
+.about-content .right-col, .studies-content .right-col, .skills-content .right-col {
+  flex: 1;
+  margin-left: 40px;
+}
+/* when image is on right side */
+.studies-content .right-col img {
+  margin-left: 15%;
+}
+
+.about-content .text, .studies-content .text, .skills-content .text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #0c193d;
+}
+
+.about-content p, .studies-content p, .skills-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #7b7b7b;
+}
+
+.about-content a, .studies-content a, .skills-content a {
+  display: inline-block;
+  background-color: #0c193d;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-top: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-content a:hover, .studies-content a:hover, .skills-content a:hover {
+  background-color: #1f306a;
+}
+
+/* style the right column */
+.right-col{
+  font-family: 'Ubuntu', sans-serif;
+}
+.right-col .text{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.right-col .text span{
+  color: #1463F3;
+  font-weight: 500;
+}
+
 /* footer section styling */
 footer{
     background: #111;
@@ -289,10 +376,6 @@ footer span a:hover{
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
-    }
-    .home{
-    background: url("images/banner2.jpg") no-repeat center;
-    background-size: cover;
     }
 }
 
