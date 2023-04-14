@@ -276,7 +276,10 @@ section .title::after{
 
 /* about section styling */
 .about {
-  background-color: #f3f7fc;
+  background-image: url(/images/pokemon-map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .about .title, .studies .title, .skills .title {
