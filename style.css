@@ -106,21 +106,21 @@ section .title::after{
   padding: 0;
   display: flex;
   list-style: none;
+  gap: 25px;
 }
 
 .navbar .menu li {
   margin: 0;
   padding: 0;
-  display: inline-block;
   position: relative;
 }
 
-.navbar .menu li a {
+.navbar .menu > li > a {
   display: block;
   color: #fff;
   font-size: 18px;
+  padding: 10px 0px;
   font-weight: 500;
-  margin-left: 25px;
   transition: color 0.3s ease;
 }
 
@@ -136,7 +136,7 @@ section .title::after{
 .dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -16px;
   display: none;
   z-index: 1;
   padding: 0;
