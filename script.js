@@ -3,11 +3,32 @@ $(document).ready(function(){
         // sticky navbar on scroll script
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
+            $('.scroll-up-btn').addClass("blue");
         }else{
             $('.navbar').removeClass("sticky");
+            $('.scroll-up-btn').removeClass("blue");
         }
         
-        // scroll-up button show/hide script
+        // change background color to red at a certain scroll position
+        if(this.scrollY > 3200){
+            $('.navbar').addClass("red-bg");
+            $('.scroll-up-btn').addClass("red");
+        }else{
+            $('.navbar').removeClass("red-bg");
+            $('.scroll-up-btn').removeClass("red");
+        }
+        
+        // change background color to green at a certain scroll position
+        if(this.scrollY > 10000){
+            $('.navbar').addClass("green-bg");
+            $('.scroll-up-btn').addClass("green");
+
+        }else{
+            $('.navbar').removeClass("green-bg");
+            $('.scroll-up-btn').removeClass("green");
+        }
+        
+        // show/hide scroll-up button
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
         }else{
