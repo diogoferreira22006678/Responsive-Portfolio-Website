@@ -26,9 +26,9 @@ html{
 }
 
 .max-width{
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 20px;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
 }
 .about, footer{
     font-family: 'Poppins', sans-serif;
@@ -79,7 +79,7 @@ section .title::after{
   background: #1463F3;
 }
 .navbar.red-bg {
-  background-color: red;
+  background-color: #a70000;
 }
 .navbar.green-bg {
   background-color: green;
@@ -88,7 +88,7 @@ section .title::after{
   background: #1463F3;
 }
 .scroll-up-btn.red{
-  background: red;
+  background: #a70000;
 }
 .scroll-up-btn.green{
   background: green;
@@ -424,7 +424,7 @@ section .title::after{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.card .box p {
+.card .box p, .card .overlay p {
   font-size: 1.2rem;
   color: #7b7b7b;
   font-weight: 600;
@@ -462,13 +462,16 @@ section .title::after{
 }
 
 /* projects that im interested in */
-
-.grid{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+.container-flex{
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
+.grid{
+  max-width: 990px;
+  margin: 0 auto;
+}
+
 
 /* footer section styling */
 footer{
