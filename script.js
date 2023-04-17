@@ -75,7 +75,13 @@ $(document).ready(function(){
         loop: true,
         autoplay: true,
         autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
+        autoplayHoverPause: true, 
+        items: 3,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        dots: false,
         responsive: {
             0:{
                 items: 1,

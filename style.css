@@ -471,8 +471,6 @@ section .title::after{
   max-width: 990px;
   margin: 0 auto;
 }
-
-
 /* footer section styling */
 footer{
     background: #111;
@@ -532,4 +530,6 @@ footer span a:hover{
   }
   
 }
+
+
 
