@@ -34,22 +34,14 @@
             </ul>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
             <ul class="dropdown" id="project">
-              <li><a href="#">UCs</a></li>
-              <li><a href="#">Independent</a></li>
-              <li><a href="#">TFC</a></li>
+              <li><a href="#myProjectsNav">UCs</a></li>
+              <li><a href="#ucProjectsNav">Independent</a></li>
+              <li><a href="#techProjectsNav">TFC</a></li>
             </ul>
           </li>
-          <li>
-            <a href="#">Web</a>
-            <ul class="dropdown" id="web">
-              <li><a href="#">Option 1</a></li>
-              <li><a href="#">Option 2</a></li>
-              <li><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contactNav">Contact</a></li>
         </ul>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
@@ -128,11 +120,10 @@
     <div class="border-btw-content"></div>
 
     <!-- projects section start -->
-    <section class="projects" id="projects">
-        <div class="max-width">
+    <section class="projects" id="projects" id="myProjectsNav">
           <div class="container">
             <h2 class="title">My Projects</h2>
-            <div class="carousel owl-carousel">
+            <div class="carousel owl-carousel" style="width: 80%; margin-left:15%;">
                 <div class="card">
                     <div class="box">
                         <img src="/images/charmander.png" alt="">
@@ -182,16 +173,15 @@
                       </div>
                 </div>
             </div>
-          </div>
         </div>
 
         <div class="border-btw-content"></div>
 
-        <div class="max-width">
+        <div class="max-width" id="ucProjectsNav">
           <div class="container">
             <h2 class="title">Projects From UCs</h2>
             <div class="container-flex">
-            <div class="grid">
+            <div class="grid" style="width: 80%; margin-left:15%;">
               <div class="card">
                 <img src="/images/charmeleon.png" alt="" width="300px" height="300px">
                 <div class="overlay">
@@ -248,11 +238,82 @@
         <div class="border-btw-content"></div>
 
         <!-- Projects That I Take Part of outside of school -->
+        <div class="max-width" id="techProjectsNav">
+          <div class="container">
+            <h2 class="title">Technologies that I like</h2>
+            <div class="container-flex">
+            <div class="grid">
+              <div class="card">
+                <img src="/images/charizard.png" alt="" width="300px" height="300px">
+                <div class="overlay">
+                  <div class="text">Project 1</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="read-more-btn">Learn More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/typhlosion.png" alt="" width="300px" height="300px">
+                <div class="overlay">
+                  <div class="text">Project 2</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="read-more-btn">Learn More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/blaziken.png" alt="" width="300px" height="300px">
+                <div class="overlay">
+                  <div class="text">Project 3</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <a href="#" class="read-more-btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
     </section>
-            
+
+    <div class="border-btw-content"></div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactNav">
+      <!-- Contact Section with a Grass type pokemon in the left side and the contact form in the right side -->
+      <div class="max-width">
+        <div class="container">
+        <h2 class="title">Contact Me</h2>
+        <div class="studies-content">
+          <div class="left-col">
+            <div class="container">
+              <form action="#" class="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <div class="right-col">
+            <img src="images/celebi.png" alt="" width="400px" height="400px" style="transform: scaleX(-1);">
+          </div>
+        </div>
+        </div>
+     </div>
+    </section>
+
+    <div class="border-btw-content"></div>
+
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="">Diogo Ferreira</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
+        <span>Created By <a href="https://github.com/diogoferreira22006678">Diogo Ferreira</a> | <span class="far fa-copyright"></span> 2023 All rights reserved.</span>
     </footer>
 
     <script src="script.js"></script>

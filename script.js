@@ -1,6 +1,17 @@
 $(document).ready(function(){
+  
+    // if the user scrolls
     $(window).scroll(function(){
-        // sticky navbar on scroll script
+        // get the height of each sections and store it in a variable
+        var aboutHeight = $('#about').height();
+        var projectsHeight = $('#projects').height();
+        // get the difference between all the page and the about section and store it in a variable
+        var contactHeight = 2 * projectsHeight;
+
+        // get the scroll position of the window and store it in a variable
+        var scrollPos = $(window).scrollTop();
+
+        // if the scroll position is smaller then projects section turn the navbar color to blue 
         if(this.scrollY > 20){
             $('.navbar').addClass("sticky");
             $('.scroll-up-btn').addClass("blue");
@@ -8,31 +19,38 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky");
             $('.scroll-up-btn').removeClass("blue");
         }
-        
-        // change background color to red at a certain scroll position
-        if(this.scrollY > 3200){
+
+        if(scrollPos > aboutHeight){
+            $('.navbar').addClass("blue-bg");
+            $('.scroll-up-btn').addClass("blue");
+        }else{
+            $('.navbar').removeClass("blue-bg");
+            $('.scroll-up-btn').removeClass("blue");
+        }
+
+        // if the scroll position is bigger then the projects section turn the navbar color to red
+        if(scrollPos > projectsHeight){
             $('.navbar').addClass("red-bg");
             $('.scroll-up-btn').addClass("red");
         }else{
             $('.navbar').removeClass("red-bg");
             $('.scroll-up-btn').removeClass("red");
         }
-        
-        // change background color to green at a certain scroll position
-        if(this.scrollY > 10000){
+
+        // if the scroll position is bigger then contact section turn the navbar color to green
+        if(scrollPos > contactHeight){
             $('.navbar').addClass("green-bg");
             $('.scroll-up-btn').addClass("green");
-
         }else{
             $('.navbar').removeClass("green-bg");
             $('.scroll-up-btn').removeClass("green");
         }
-        
+
         // show/hide scroll-up button
         if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
+           $('.scroll-up-btn').addClass("show");
         }else{
-            $('.scroll-up-btn').removeClass("show");
+           $('.scroll-up-btn').removeClass("show");
         }
     });
 
